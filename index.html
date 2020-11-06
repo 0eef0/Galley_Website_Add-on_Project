@@ -8,7 +8,10 @@
     <title>How Lamps Will Change Yo Life</title>
     <link rel="icon" href="images/icon.png" type="image/gif" sizes="32x32">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js">
+        var audio = document.getElementById("audio");
+    </script>
+    <audio id="audio" src="sounds/click.mp3"></audio>
     <style>
         div.container{
             display: grid;
@@ -62,7 +65,7 @@
                     <h1 id="title">The Art of the Household Lamp</h1>
                 </td>
                 <td>
-                    <button onclick="changeEverything()" id="lights"><img src="images/switchON.png" height="100%" width="auto" id="image"></button>
+                    <button onclick="changeEverything(); audio.play();" id="lights"><img src="images/switchON.png" height="100%" width="auto" id="image"></button>
                 </td>
             </tr>
         </table>
