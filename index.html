@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ethan Roldan">
-    <meta name="description" content="placeholder">
+    <meta name="description" content="Here is the optimal information area for all things lamp.">
     <title>How Lamps Will Change Yo Life</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="32x32">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js"></script>
     <style>
+        div.container{
+            display: grid;
+            grid-template-areas: 
+            'sidePic overview'
+            'sidePic overview'
+            'sidePic history '
+            'sidePic history '
+            'sidePic .';
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div.sidePic{
+            grid-area: sidePic;
+        }
+        div.overview{
+            grid-area: overview;
+        }
+        div.history{
+            grid-area: history;
+        }
         td{
             width: 15%;
         }
@@ -33,8 +54,8 @@
             <tr>
                 <td>
                     <ul>
-                        <li id="link"><p><a href="index.html"><strong>Home</strong></a></p></li>
-                        <li id="link"><p><a href="morelamp.html">All About Lamps</a></p></li>
+                        <li><p><a href="index.html" id="link"><strong>Home</strong></a></p></li>
+                        <li><p><a href="morelamp.html" id="link2">All About Lamps</a></p></li>
                     </ul>
                 </td>
                 <td>
@@ -46,16 +67,24 @@
             </tr>
         </table>
     </nav>
-    <div style="display: inline;">
-        <aside style="display:inline-block; vertical-align: top; width: 30%;">
+    <div class="container">
+        <!--style="display:inline-block; vertical-align: top; width: 30%;"-->
+        <div class="sidePic">
             <!--Please swap out picture when there is time-->
-            <img src="images/tallLamp.png">
-        </aside>
-        <div class="mainDiv" id="darkDiv">
+            <img src="images/tallLamp.png" style="padding-left: 50%;">
+        </div>
+        <div class="mainDiv overview" id="darkDiv">
             <h1>What is a lamp?</h1>
             <p>Well, lamps are the light of every home's life.</p>
             <p>
-                However, they can be more than just that. For some people, lamps are a thing to look up to; a thing to appreciate. Here, we will showcase the admirability of various lamps everywhere so you can appreciate them just a little more.
+                However, they can be more than just that. For most people, lamps are a thing to look up to; a thing to appreciate. Here, we will showcase the admirability of various lamps everywhere so you can appreciate them just a little more.
+            </p>
+        </div>
+        <div class="mainDiv history" id="darkDiv2">
+            <h2>The History of Lamps</h2>
+            <img src="images/edison.jpg" width="300rem" style="float: left; clear: right;">
+            <p style="text-align: left;">
+                Picture this, it is October 1979. Everyone is using candles and lanturns to light their houses. Then all of a sudden, our lord and savior Mr. Thomas Edison created the lamp, after countless experiments. It is because of this gift that we are able to live our daily lives.
             </p>
         </div>
     </div>
