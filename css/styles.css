@@ -2,6 +2,10 @@
     font-family: sitefont;
     src: url(../fonts/EdlineDemoRegular.ttf);
 }
+@font-face{
+    font-family: wrightfont;
+    src: url(../fonts/Ace-Attorney.ttf);
+}
 
 body{
     background-image: url(../images/background.jpg);
@@ -10,6 +14,7 @@ body{
     background-position: center;
     color: black;
     text-align: center;
+    font-family: wrightfont;
 }
 body.dark-mode{
     color: white;

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js"></script>
     <audio id="audio" src="sounds/beep.wav"></audio>
+    <audio id="flip" src="sounds/flip.mp3"></audio>
     <style>
         td{
             width: 15%;
@@ -25,6 +26,34 @@
         a{
             color: black;
             text-decoration: none;
+        }
+
+        .mainTable {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 33%;
+            background-color: #f1d592;
+        }
+        .e{
+            width: 15%;
+        }
+        .t{
+            width: 60%;
+        }
+        .d{
+            width: 25%;
+        }
+        div button{
+            border: black 1px solid;
+            border-bottom: transparent 0px none;
+            background-color: #f1d592;
+            width: 20%;
+        }
+        #tab1{
+            font-family: wrightfont;
+        }
+        #tab2{
+            font-family: wrightfont;
         }
     </style>
 </head>
@@ -43,13 +72,147 @@
                     <img src="images/logo.png" height="50rem">
                 </td>
                 <td>
-                    <button onclick="changeEverything(); audio.play();" id="lights"><img src="images/switchON.png" height="100%" width="auto" class="image" style="position: absolute; top: 0.02rem; right: 0.5rem;"></button>
+                    <button onclick="darkDiv(); changeImage(); changeTitle(); audio.play();" id="lights"><img src="images/switchON.png" height="100%" width="auto" class="image" style="position: absolute; top: 0.02rem; right: 0.5rem;"></button>
                 </td>
             </tr>
         </table>
     </nav>
     <div class="mainDiv darkDiv">
-        <h1>Episodes</h1>
+        <h1 id="eTitle">Episodes</h1>
+        <div style="text-align: left;">
+            <button onclick="switchTable(); flip.play();"><p id="tab1"><strong>Season 1</strong></p></button>
+            <button onclick="switchTable2(); flip.play();"><p id="tab2">Season 2</p></button>
+        </div>
+        <table style="width: 100%;" class="mainTable" id="episodeTable">
+            <tr class="mainTable">
+                <td colspan="3" class="mainTable"><strong>Season 1</strong></td>
+            </tr>
+            <tr class="mainTable">
+                <td class="mainTable e"><strong>Episode</strong></td>
+                <td class="mainTable t"><strong>Title</strong></td>
+                <td class="mainTable d"><strong>Air Date</strong></td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">1</td>
+                <td class="mainTable t">"The First Turnabout"</td>
+                <td class="mainTable d">April 2, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">2</td>
+                <td class="mainTable t">"Turnabout Sisters - 1st Trial"</td>
+                <td class="mainTable d">April 9, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">3</td>
+                <td class="mainTable t">"Turnabout Sisters - 2nd Trial"</td>
+                <td class="mainTable d">April 16, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">4</td>
+                <td class="mainTable t">"Turnabout Sisters - Last Trial"</td>
+                <td class="mainTable d">April 23, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">5</td>
+                <td class="mainTable t">"Turnabout Samurai - 1st Trial"</td>
+                <td class="mainTable d">April 30, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">6</td>
+                <td class="mainTable t">"Turnabout Samurai - 2nd Trial"</td>
+                <td class="mainTable d">May 7, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">7</td>
+                <td class="mainTable t">"Turnabout Samurai - Last Trial"</td>
+                <td class="mainTable d">May 14, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">8</td>
+                <td class="mainTable t">"Turnabout Goodbyes - 1st Trial"</td>
+                <td class="mainTable d">May 21, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">9</td>
+                <td class="mainTable t">"Turnabout Goodbyes - 2nd Trial"</td>
+                <td class="mainTable d">May 28, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">10</td>
+                <td class="mainTable t">"Turnabout Goodbyes - 3rd Trial"</td>
+                <td class="mainTable d">June 4, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">11</td>
+                <td class="mainTable t">"Turnabout Goodbyes - 4th Trial"</td>
+                <td class="mainTable d">June 11, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">12</td>
+                <td class="mainTable t">"Turnabout Goodbyes - Last Trial"</td>
+                <td class="mainTable d">June 18, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">13</td>
+                <td class="mainTable t">"Turnabout Promise"</td>
+                <td class="mainTable d">June 25, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">14</td>
+                <td class="mainTable t">"Reunion and Turnabout - 1st Trial"</td>
+                <td class="mainTable d">July 9, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">15</td>
+                <td class="mainTable t">"Reunion and Turnabout - 2nd Trial"</td>
+                <td class="mainTable d">July 16, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">16</td>
+                <td class="mainTable t">"Reunion and Turnabout - 3rd Trial"</td>
+                <td class="mainTable d">July 23, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">17</td>
+                <td class="mainTable t">"Reunion and Turnabout - Last Trial"</td>
+                <td class="mainTable d">July 30, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">18</td>
+                <td class="mainTable t">"Turnabout Big Top - 1st Trial"</td>
+                <td class="mainTable d">August 6, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">19</td>
+                <td class="mainTable t">"Turnabout Big Top - 2nd Trial"</td>
+                <td class="mainTable d">August 13, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">20</td>
+                <td class="mainTable t">"Turnabout Big Top - Last Trial"</td>
+                <td class="mainTable d">August 20, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">21</td>
+                <td class="mainTable t">"Farewell, My Turnabout - 1st Trial"</td>
+                <td class="mainTable d">September 3, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">22</td>
+                <td class="mainTable t">"Farewell, My Turnabout - 2nd Trial"</td>
+                <td class="mainTable d">September 10, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">23</td>
+                <td class="mainTable t">"Farewell, My Turnabout - 3rd Trial"</td>
+                <td class="mainTable d">September 17, 2016</td>
+            </tr>
+            <tr class="mainTable"> 
+                <td class="mainTable e">24</td>
+                <td class="mainTable t">"Farewell, My Turnabout - Last Trial"</td>
+                <td class="mainTable d">September 24, 2016</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
