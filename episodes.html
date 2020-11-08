@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ethan Roldan">
+    <title>Episode List</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="32x32">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <audio id="audio" src="sounds/beep.wav"></audio>
+    <style>
+        td{
+            width: 15%;
+        }
+        button#lights{
+            height: 3rem; 
+            width: 1rem;
+            background-color: transparent;
+            border: none transparent 0px;
+        }
+        button:focus{
+            outline: none;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <a href="index.html"><li><p>Home</p></li></a>
+                        <a href="bios.html"><li><p>Character Bios</p></li></a>
+                        <a href="episodes.html"><li><p><strong>Episodes</strong></p></li></a>
+                    </ul>
+                </td>
+                <td>
+                    <img src="images/logo.png" height="50rem">
+                </td>
+                <td>
+                    <button onclick="changeEverything(); audio.play();" id="lights"><img src="images/switchON.png" height="100%" width="auto" id="image"></button>
+                </td>
+            </tr>
+        </table>
+    </nav>
+    <div class="mainDiv darkDiv">
+        <h1>Episodes</h1>
+    </div>
+</body>
+</html>

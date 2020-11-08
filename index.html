@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ethan Roldan">
-    <meta name="description" content="Here is the optimal information area for all things lamp.">
-    <title>How Lamps Will Change Yo Life</title>
+    <meta name="description" content="Here is the optimal information area for all things Ace Attorney.">
+    <title>Ace Attorney</title>
     <link rel="icon" href="images/icon.png" type="image/gif" sizes="32x32">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js">
         var audio = document.getElementById("audio");
     </script>
-    <audio id="audio" src="sounds/click.mp3"></audio>
+    <audio id="audio" src="sounds/beep.wav"></audio>
     <style>
+        /*
         div.container{
             display: grid;
             grid-template-areas: 
@@ -33,6 +34,7 @@
         div.history{
             grid-area: history;
         }
+        */
         td{
             width: 15%;
         }
@@ -52,17 +54,18 @@
     </style>
 </head>
 <body>
-    <nav class="nav" id="header">
+    <nav class="nav">
         <table>
             <tr>
                 <td>
                     <ul>
-                        <li><p><a href="index.html" id="link"><strong>Home</strong></a></p></li>
-                        <li><p><a href="morelamp.html" id="link2">All About Lamps</a></p></li>
+                        <a href="index.html"><li><p><strong>Home</strong></p></li></a>
+                        <a href="bios.html"><li><p>Character Bios</p></li></a>
+                        <a href="episodes.html"><li><p>Episodes</p></li></a>
                     </ul>
                 </td>
                 <td>
-                    <h1 id="title">The Art of the Household Lamp</h1>
+                    <img src="images/logo.png" height="50rem">
                 </td>
                 <td>
                     <button onclick="changeEverything(); audio.play();" id="lights"><img src="images/switchON.png" height="100%" width="auto" id="image"></button>
@@ -71,28 +74,22 @@
         </table>
     </nav>
     <div class="container">
-        <div class="sidePic">
-            <!--Please swap out picture when there is time-->
-            <img src="images/tallLamp.png" style="padding-left: 50%;">
+        <div class="mainDiv overview darkDiv">
+            <h1>So what is this show?</h1>
+            <p>Ace Attorney is an anime based on the obscure video game series, Phoenix Wright: Ace Attorney. It follow Phoenix in his never ending efforts to keep the inncocent from being arrested. As he goes through the story, he meets some very memorable characters.</p>
         </div>
-        <div class="mainDiv overview" id="darkDiv">
-            <h1>What is a lamp?</h1>
-            <p>Well, lamps are the light of every home's life.</p>
-            <p>
-                However, they can be more than just that. For most people, lamps are a thing to look up to; a thing to appreciate. Here, we will showcase the admirability of various lamps everywhere so you can appreciate them just a little more.
-            </p>
-        </div>
-        <div class="mainDiv history" id="darkDiv2">
-            <h2>The History of Lamps</h2>
-            <img src="images/edison.jpg" width="300rem" style="float: left; clear: right; padding-right: 3rem;">
-            <h4>A Crash Course on Lamps</h4>
+        <div class="mainDiv history darkDiv">
+            <!--
+            <h2>The History of Ace Attorney</h2>
+            <img src="images/animecover.jpg" width="300rem" style="float: left; clear: right; padding-right: 3rem; opacity: 100%;">
+            <h4>The Anime</h4>
             <ul style="text-align: left;">
-                <li>Way waaaaaay back 70000 BCE, the first lamp was born. Being that this was still the stone age, it used ver primitive methods. What people would do is that they would hollow out a shell or rock, put some moss and animal fat inside and then ignite.</li> 
-                <li>In China and Egypt, the shells and rocks were replaced by pottery and bronze.</li> 
-                <li>The Romans made an important development, being the shaping of lamps into animals and other figures.</li> 
-                <li>The next major development was when petroleum oil began to be pumped in the 1850's. This led to most lamps converting being petroleum powered</li>
-                <li>As electricity overtook gas as a powersource, many scientists raced to be the one to make and effective electric lamp. This is when our lord and savior, Thomas Edison, created the first iteration of the modern lightbulb, using a carbonized thread and an electrical current to emit light.</li>
+                <li>The anime is based on the video game trilogy, Phoenix Wright.</li>
+                <li>It aired from April 2016 to March 2019.</li>
             </ul>
+        -->
+        <h2>The Whole Show in Around a Minute and a Half</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GQ3Sri_HsEw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 </body>

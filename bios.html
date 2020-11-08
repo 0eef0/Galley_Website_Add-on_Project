@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ethan Roldan">
+    <title>Bios</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="32x32">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <audio id="audio" src="sounds/beep.wav"></audio>
+    <style>
+        td{
+            width: 15%;
+        }
+        button#lights{
+            height: 3rem; 
+            width: 1rem;
+            background-color: transparent;
+            border: none transparent 0px;
+        }
+        button:focus{
+            outline: none;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        div.container{
+            display: grid;
+            grid-template-areas: 
+            'title title'
+            'portrait name'
+            'portrait content'
+            'button button';
+        }
+        div.title{
+            margin-top: 1rem;
+            grid-area: title;
+        }
+        div.portrait{
+            grid-area: portrait;
+        }
+        div.name{
+            grid-area: name;
+        }
+        div.content{
+            grid-area: content;
+        }
+        div.button{
+            grid-area: button;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <a href="index.html"><li><p>Home</p></li></a>
+                        <a href="bios.html"><li><p><strong>Character Bios</strong></p></li></a>
+                        <a href="episodes.html"><li><p>Episodes</p></li></a>
+                    </ul>
+                </td>
+                <td>
+                    <img src="images/logo.png" height="50rem">
+                </td>
+                <td>
+                    <button onclick="changeEverything(); audio.play();" id="lights"><img src="images/switchON.png" height="100%" width="auto" id="image"></button>
+                </td>
+            </tr>
+        </table>
+    </nav>
+    <div class="mainDiv darkDiv container">
+        <!--
+        <h1>Recurring Characters</h1>
+        <table>
+            <tr>
+                <td rowspan="2"><img src="images/phoenix.png" height="500rem" id="character" style="border: black 2px solid;"></td>
+                <td><h2 id="charName">Phoenix Wright</h2></td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="charContent">Phoenix Wright is the protagonist. He is a new defense attorney who is determined to get the not guilty verdict for his client.</p>
+                </td>
+            </tr>
+        </table>
+    -->
+        <div class="title"><h1>Main Characters</h1></div>
+        <div class="portrait">
+            <img src="images/phoenix.png" height="500rem" id="character" style="border: black 2px solid;">
+        </div>
+        <div class="name">
+            <h2 id="charName">Phoenix Wright</h2>
+        </div>
+        <div class="content">
+            <p id="charContent">Phoenix Wright is the protagonist. He is a new defense attorney who is determined to get the not guilty verdict for his client.</p>
+        </div>
+        <div class="button">
+            <button onclick="switchPortraitP(); audio.play();">Previous</button>
+            <button onclick="switchPortraitN(); audio.play();">Next</button>
+        </div>
+    </div>
+</body>
+</html>
