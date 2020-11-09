@@ -57,3 +57,7 @@ div.mainDiv{
     width: 70%;
     padding: 1rem;
 }
+
+#pageButtons{
+    width: 20%;
+}
