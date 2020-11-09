@@ -35,7 +35,6 @@
             'button button';
         }
         div.title{
-            margin-top: 1rem;
             grid-area: title;
         }
         div.portrait{
@@ -53,7 +52,7 @@
     </style>
 </head>
 <body>
-    <nav class="nav">
+    <div class="nav">
         <table>
             <tr>
                 <td>
@@ -64,29 +63,15 @@
                     </ul>
                 </td>
                 <td>
-                    <img src="images/logo.png" height="50rem">
+                    <img src="images/logo.png" height="50rem" class="topLogo">
                 </td>
                 <td>
                     <button onclick="changeEverything(); charBorder(); audio.play();" id="lights"><img src="images/switchON.png" height="100%" width="auto" class="image" style="position: absolute; top: 0.02rem; right: 0.5rem;"></button>
                 </td>
             </tr>
         </table>
-    </nav>
+    </div>
     <div class="mainDiv darkDiv container">
-        <!--
-        <h1>Recurring Characters</h1>
-        <table>
-            <tr>
-                <td rowspan="2"><img src="images/phoenix.png" height="500rem" id="character" style="border: black 2px solid;"></td>
-                <td><h2 id="charName">Phoenix Wright</h2></td>
-            </tr>
-            <tr>
-                <td>
-                    <p id="charContent">Phoenix Wright is the protagonist. He is a new defense attorney who is determined to get the not guilty verdict for his client.</p>
-                </td>
-            </tr>
-        </table>
-    -->
         <div class="title"><h1>Main Characters</h1></div>
         <div class="portrait">
             <img src="images/phoenix.png" width="60%" id="character" style="border: black 2px solid;">
