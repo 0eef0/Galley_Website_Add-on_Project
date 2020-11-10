@@ -7,6 +7,10 @@
     src: url(../fonts/Ace-Attorney.ttf);
 }
 
+html{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
@@ -15,9 +19,15 @@ body{
     color: black;
     text-align: center;
     font-family: wrightfont;
+    margin: 0px;
+    margin-top: 1rem;
 }
 body.dark-mode{
     color: white;
+}
+
+td.buttonId{
+    width: 100%;
 }
 
 .nav{
@@ -42,7 +52,7 @@ td ul li{
     margin: 0;
     padding: 0;
 }
-div li{
+div table li{
     list-style-type: none;
     padding: 8px;
     float: left;

@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ethan Roldan">
-    <meta name="description" content="Here is the optimal information area for all things Ace Attorney.">
-    <title>Ace Attorney</title>
+    <title>Trivia</title>
     <link rel="icon" href="images/icon.png" type="image/gif" sizes="32x32">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js">
@@ -37,10 +36,10 @@
             <tr>
                 <td id="buttonId">
                     <ul>
-                        <a href="index.html"><li style="width: 20%;"><p><strong>Home</strong></p></li></a>
+                        <a href="index.html"><li style="width: 20%;"><p>Home</p></li></a>
                         <a href="bios.html"><li style="width: 20%;"><p>Character Bios</p></li></a>
                         <a href="episodes.html"><li style="width: 20%;"><p>Episodes</p></li></a>
-                        <a href="trivia.html"><li style="width: 20%;"><p>Trivia</p></li></a>
+                        <a href="trivia.html"><li style="width: 20%;"><p><strong>Trivia</strong></p></li></a>
                     </ul>
                 </td>
                 <td style="padding-top: 0;">
@@ -52,16 +51,32 @@
             </tr>
         </table>
     </div>
-    <div class="container">
-        <div class="mainDiv overview darkDiv">
-            <h1>So what is this show?</h1>
-            <img src="images/animecover.jpg" style="float: left; clear: right; width: 30%;">
-            <p>Ace Attorney is an anime based on the obscure video game series, Phoenix Wright: Ace Attorney. It follow Phoenix in his never ending efforts to keep the inncocent from being arrested. As he goes through the story, he meets some very memorable characters.</p>
-        </div>
-        <div class="mainDiv darkDiv">
-        <h2>The Whole Show in Around a Minute and a Half</h2>
-        <iframe width="80%" height="315" src="https://www.youtube.com/embed/GQ3Sri_HsEw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+    <div class="mainDiv darkDiv">
+        <h1>Trivia!</h1>
+        <form style="text-align: left;">
+            <fieldset>
+                <legend style="text-align: left;">Ace Attorney Quiz</legend>
+                <h4>1. Phoenix Wright is a ________.</h4>
+                <ul style="list-style-type: none;">
+                <li>
+                    <input type="radio" id="1-1" name="q1">
+                    <label for="1-1">Prosecutor</label>
+                </li>
+                <li>
+                    <input type="radio" id="1-2" name="q1">
+                    <label for="1-2">Defense Attorney</label>
+                </li>
+                <li>
+                    <input type="radio" id="1-3" name="q1">
+                    <label for="1-3">Detective</label>
+                </li>
+                <li>
+                    <input type="radio" id="1-4" name="q1">
+                    <label for="1-3">Criminal</label>
+                </li>
+                </ul>
+            </fieldset>
+        </form>
     </div>
 </body>
 </html>

@@ -374,3 +374,10 @@ function switchTable2(){
     document.getElementById("tab1").innerHTML = "Season 1";
     document.getElementById("tab2").innerHTML = "<strong>Season 2</strong>";
 }
+
+//below is the code for the trivia page that i didn't know existed
+//the trivia will only be from the first season cuz i'm avoiding spoilers
+var score = 0;
+function ansCorrect(){
+    score++;
+}
