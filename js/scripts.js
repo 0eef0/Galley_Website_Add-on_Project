@@ -379,5 +379,34 @@ function switchTable2(){
 //the trivia will only be from the first season cuz i'm avoiding spoilers
 var score = 0;
 function ansCorrect(){
-    score++;
+    score = 0;
+    var answers = document.getElementsByClassName("correct");
+    for(var i = 0; i < answers.length; i++){
+        if(answers[i].checked){
+            score++;
+        }
+    }
+
+    var x = document.getElementById("q9").value;
+    var y = document.getElementById("q10").value;
+    if(x.toLowerCase() == "jack hammer"){
+        score++;
+    }
+    if(y.toLowerCase() == "twenty" || y == 20){
+        score++;
+    }
+}
+function checkAnswers(){
+    var scoreFinal = score + "/10";
+    if(score >= 8){
+        scoreFinal += ": Wow, you really know your stuff. Good job!";
+    }else if(score >= 5){
+        scoreFinal += ": You're at least a decent fan of the series, nice.";
+    }else if(score >= 2){
+        scoreFinal += ": You don't really know much about the series, huh?";
+    }else{
+        scoreFinal += ": You know nothing, but you have the whole series ahead of you, so get watchin!";
+    }
+    console.log(scoreFinal);
+    document.getElementById("finalScore").innerHTML = scoreFinal;
 }

@@ -52,29 +52,155 @@
         </table>
     </div>
     <div class="mainDiv darkDiv">
-        <h1>Trivia!</h1>
+        <h1>Ace Attorney Quiz</h1>
         <form style="text-align: left;">
             <fieldset>
-                <legend style="text-align: left;">Ace Attorney Quiz</legend>
-                <h4>1. Phoenix Wright is a ________.</h4>
+                <legend style="text-align: left;">Multiple Choice</legend>
+                <h4>Phoenix Wright is a ________.</h4>
                 <ul style="list-style-type: none;">
-                <li>
-                    <input type="radio" id="1-1" name="q1">
-                    <label for="1-1">Prosecutor</label>
-                </li>
-                <li>
-                    <input type="radio" id="1-2" name="q1">
-                    <label for="1-2">Defense Attorney</label>
-                </li>
-                <li>
-                    <input type="radio" id="1-3" name="q1">
-                    <label for="1-3">Detective</label>
-                </li>
-                <li>
-                    <input type="radio" id="1-4" name="q1">
-                    <label for="1-3">Criminal</label>
-                </li>
+                    <li>
+                        <input type="radio" id="1-1" name="q1">
+                        <label for="1-1">Prosecutor</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="1-2" name="q1" class="correct">
+                        <label for="1-2">Defense Attorney</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="1-3" name="q1">
+                        <label for="1-3">Detective</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="1-4" name="q1">
+                        <label for="1-4">Criminal</label>
+                    </li>
                 </ul>
+
+                <h4>What was the murder weapon that killed Mia Fey?</h4>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <input type="radio" id="2-1" name="q2">
+                        <label for="2-1">A Revolver</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="2-2" name="q2">
+                        <label for="2-2">A mini statue of "The Thinker"</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="2-3" name="q2" class="correct">
+                        <label for="2-3">A Broken Clock</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="2-4" name="q2">
+                        <label for="2-4">A Push and Fall</label>
+                    </li>
+                </ul>
+                <h4>What piece of evidence got Manfred von Karma convicted of murder?</h4>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <input type="radio" id="3-1" name="q3" class="correct">
+                        <label for="3-1">A Metal Detector</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="3-2" name="q3">
+                        <label for="3-2">A Revolver</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="3-3" name="q3">
+                        <label for="3-3">A Map of the Crime Scene</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="3-4" name="q3">
+                        <label for="3-4">A Character Profile</label>
+                    </li>
+                </ul>
+                <h4>Who is the old lady security guard for the movie studio?</h4>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <input type="radio" id="4-1" name="q4">
+                        <label for="4-1">Oldhag</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="4-2" name="q4" class="correct">
+                        <label for="4-2">Oldbag</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="4-3" name="q4">
+                        <label for="4-3">Oldmag</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="4-4" name="q4">
+                        <label for="4-4">Unnamed Guard</label>
+                    </li>
+                </ul>
+                <h4>Maya Fey is a ________</h4>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <input type="radio" id="5-1" name="q5">
+                        <label for="5-1">Police Cadet</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5-2" name="q5">
+                        <label for="5-2">Fortune Teller</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5-3" name="q5">
+                        <label for="5-3">Witch</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5-4" name="q5" class="correct">
+                        <label for="5-4">Spirit Medium</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>True/False</legend>
+                <h4>Mr. Sahwit is a newspaper salesman.</h4>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <input type="radio" id="6-1" name="q6">
+                        <label for="6-1">True</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="6-2" name="q6" class="correct">
+                        <label for="6-2">False</label>
+                    </li>
+                </ul>
+                <h4>April May was the culprit of Mia Fey's murder.</h4>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <input type="radio" id="7-1" name="q7">
+                        <label for="7-1">True</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="7-2" name="q7" class="correct">
+                        <label for="7-2">False</label>
+                    </li>
+                </ul>
+                <h4>Phoenix and Edgeworth knew each other in their youth.</h4>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <input type="radio" id="8-1" name="q8" class="correct">
+                        <label for="8-1">True</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="8-2" name="q8">
+                        <label for="8-2">False</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Short Answer</legend>
+                <h4>Who was the victim in the case where Will Powers was the defendant?</h4>
+                <input type="text" id="q9">
+                <br>
+                <h4>What age did Edgeworth become a prosecutor?</h4>
+                <input type="text" id="q10">
+            </fieldset>
+            <button onclick="ansCorrect(); checkAnswers();" type="button">Submit</button>
+            <fieldset>
+                <legend style="text-align: center;">Your Score</legend>
+                <h1 id="finalScore"></h1>
             </fieldset>
         </form>
     </div>
